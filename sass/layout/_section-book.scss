@@ -1,0 +1,60 @@
+
+.section-book {
+    padding: 15 0rem;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height:75rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+}
+
+.book {
+    background-image:linear-gradient(105deg,
+    rgba(255, 255, 255, 0.9)0%,
+    rgba(255, 255, 255, 0.9)50%,
+    transparent 50%) ,
+    url(../img/nat-10.jpg);
+
+
+    background-size: cover;
+    width: 114rem;
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.45);
+
+    @include respond(tab-land) {
+        background-image:linear-gradient(105deg,
+    rgba(255, 255, 255, 0.9)0%,
+    rgba(255, 255, 255, 0.9)65%,
+    transparent 65%) ,
+    url(../img/nat-10.jpg);
+    }
+
+    @include respond(tab-port) {
+        background-image:linear-gradient(to right,
+    rgba(255, 255, 255, 0.9)0%,
+    rgba(255, 255, 255, 0.9)100%) ,
+    url(../img/nat-10.jpg);
+    }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+}

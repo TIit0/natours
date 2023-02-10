@@ -1,0 +1,126 @@
+.section-about {
+    background-color: $color-grey-light1;
+    padding: 30rem 0;
+    margin-top: -20vh;
+
+    @include respond(tab-land) {
+        padding: 20rem 0;
+    }
+
+
+
+    &__content {
+        display: flex;
+        justify-content: center;
+
+        @include respond(tab-land) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text {
+        flex: 0 0 30%;
+        margin-right: 6rem;
+
+        @include respond(tab-land) {
+            display: block;
+            flex: 0 0 50%;
+            margin-top: -3rem;
+        }
+    }
+
+
+
+
+
+    &__images {
+        flex: 0 0 30%;
+
+        @include respond(tab-land) {
+            display: block;
+            flex: 0 0 50%;
+        }
+
+
+        &:hover .photo:not(:hover) {
+            transform:scale(.95) translateY(-.5rem);
+        }
+        
+
+        .photo-container {
+            position: relative;
+
+            @include respond(tab-land) {
+                margin-top: 5rem;
+            }
+            
+
+            &--ph1 {
+            left: 0;
+            top: -2rem;
+
+            @include respond(tab-land) {
+                top: 0;
+                transform:scale(1.2);
+            }
+            }
+
+            &--ph2 {
+            right: 0;
+            top: 2rem;
+
+            @include respond(tab-land) {
+                top: -1rem;
+                transform:scale(1.3);
+
+                z-index: 5;
+                
+            }
+            
+            }
+
+            &--ph3 {
+            left: 20%;
+            top: 10rem;
+
+            @include respond(tab-land) {
+                top: 0;
+                left: 0;
+                transform:scale(1.2);
+            }
+            }
+        }
+    }
+
+
+
+}
+
+.photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.4);
+    border-radius: .2rem;
+    position:absolute;
+    z-index: 2;
+    transition: transform 300ms;
+
+    @include respond(tab-land) {
+        float: left;
+        position: relative;
+        width: 33.33%;
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.4);
+    }
+
+    &:hover {
+        transform:scale(1.05);
+        box-shadow: 0 2.5rem 4rem rgba(0,0,0,.5);
+        z-index: 5;
+        border: transparent solid 1rem;
+        border-radius: 0;
+
+        @include respond(tab-land) {
+            transform:scale(1.5);
+        }
+    }
+}

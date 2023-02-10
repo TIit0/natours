@@ -1,0 +1,33 @@
+
+//abstracts
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+//base
+@import "./base/base";
+@import "./base/animations";
+@import "./base/typography";
+@import "./base/utilities";
+
+//pages
+@import "./pages/home";
+
+//componets
+@import "./componets/button";
+@import "./componets/feature-box";
+@import "./componets/card";
+@import "./componets/story";
+@import "./componets/_bg-video";
+@import "./componets/form";
+@import "./componets/popup";
+
+//layout
+@import "./layout/header";
+@import "./layout/about";
+@import "./layout/features";
+@import "./layout/section-tours";
+@import "./layout/section-stories";
+@import "./layout/section-book";
+@import "./layout/footer";
+@import "./layout/navigation";
