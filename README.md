@@ -1,1 +1,3 @@
 # natours
+A no Js project build only with HTML css/Sass to learn the most I could out of it, I did learn a lot. Mixins, conditional css etc...
+it even has a modal with no JS ( uses the checkbox hack)
